@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* TANGERINE: #FEB75D
+SCUBA BLUE: #55C9EA
+PRUSSIAN: #013B63
+MIDNIGHT: #000E2B
+
+PAIR 1 - PRUSSIAN AND SCUBA
+PAIR 2 - MIDNIGHT AND TANGERINE
+PAIR 3 - MIDNIGHT AND SCUBA 
+PAIR 4 - MIDNIGHT AND PRUSSIAN
+PAIR 5 - PRUSSIAN AND TANGERINE
+PAIR 6 - SCUBA AND TANGERINE */
+
+.container {
+    display: contents;
+  }
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+}
+
+.sidebar ul a{
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 40px;
+        font-size: 15px;
+        color: white;
+        padding-left: 20px;
+        box-sizing: border-box;
+        border-top: 1px solid rgba(255, 255, 255, .1);
+        border-bottom: 1px solid black;      
+        transition: .4s;
+}
+.custom-hover-bg:hover {
+    background-color: #013B63;
+}
+ul li:hover a{
+    padding-left: 30px;    
+}
+.sidebar ul a i{
+    margin-right: 10px;
+}
+
+.dropdown-content {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    list-style: none;
+}
+.dropdown-content li:hover {
+    padding-left: 10px;
+    background-color: #013B63;    
+}
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 230px;
+}
